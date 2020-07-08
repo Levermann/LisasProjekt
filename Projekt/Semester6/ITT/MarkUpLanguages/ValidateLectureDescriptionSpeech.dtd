@@ -1,6 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-        <!--- Diese DTD beschreibt den Aufbau der MarkUp Language zur
-        Vorlesungsbeschreibung -->
+        <!---Exercise 2 XML & DTDs This DTD File describes the structure of the MarkUp Language for Lecture description -->
         <!ELEMENT Vorlesung (Titel, Semester+, Hochschule, SWS, Kapitel+, Quelle*)>
         <!ELEMENT Titel (#PCDATA)>
         <!ELEMENT Semester (#PCDATA)>

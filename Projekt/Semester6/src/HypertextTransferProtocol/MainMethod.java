@@ -1,12 +1,6 @@
-import com.sun.deploy.net.HttpResponse;
-import sun.misc.IOUtils;
+package HypertextTransferProtocol;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.URL;
-import java.net.URLConnection;
-import java.util.Arrays;
-import java.util.logging.Logger;
+import HypertextTransferProtocol.HttpMethodCaller;
 
 public class MainMethod {
 
@@ -24,7 +18,7 @@ public class MainMethod {
 
         final byte[] urlParams = HttpMethodCaller.setUrlParameters("organisation", "HawLa", "name", "LS");
 
-        SendHttpRequest.sendPost();
+        //SendHttpRequest.sendPost();
         HttpMethodCaller.executePost("","");
 
         // SendHttpRequest.getServerResponses(PATH_POST_METHOD);
@@ -32,8 +26,8 @@ public class MainMethod {
 
      //   final SendHttpRequest sendHttpRequest = SendHttpRequest.sendHttpRequest(PATH_POST_METHOD, POST, "organisation=HawLa name=li st");
         final SendHttpRequest sendHttpRequest = SendHttpRequest.sendHttpRequest(PATH_GET_METHOD, GET,  "");
-    //    System.out.println("This is the response Code from SERVER POST" + sendHttpRequest.getServerResponseStatus());
-      //  System.out.println("This is the response from SERVER POST" + sendHttpRequest.getResponseBody());
+        System.out.println("This is the response Code from SERVER POST" + sendHttpRequest.getServerResponseStatus());
+        System.out.println("This is the response from SERVER POST" + sendHttpRequest.getResponseBody());
 
 
     }

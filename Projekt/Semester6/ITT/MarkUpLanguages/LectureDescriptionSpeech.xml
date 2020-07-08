@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE Vorlesung SYSTEM "ValidateLectureDescriptionSpeech.dtd">
-
+<!DOCTYPE Vorlesung SYSTEM
+        "C:\Users\Lisa\IdeaProjects\Projekt\Semester6\ITT\MarkUpLanguages\ValidateLectureDescriptionSpeech.dtd">
+<!--- Exercise 2 XML & DTDs validate created XML File
+use ValidateLectureDescriptionSpeech.dtd for validating XML -->
 <Vorlesung>
     <Titel>Software Engineering</Titel>
     <Semester>Sommersemester</Semester>

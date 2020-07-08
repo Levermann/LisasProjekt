@@ -1,6 +1,9 @@
-import javax.net.ssl.HttpsURLConnection;
+package HypertextTransferProtocol;
+
 import java.io.*;
-import java.net.*;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.net.URLConnection;
 import java.util.Scanner;
 
 public class SendHttpRequest {
@@ -223,15 +226,6 @@ public class SendHttpRequest {
 
         }
         else throw new IllegalStateException("unknown Request-Method: " + requestMethod);
-    }
-
-
-    public static void setServerResponseStatus(int serverResponseStatus) {
-        SendHttpRequest.serverResponseStatus = serverResponseStatus;
-    }
-
-    public static void setResponseBody(String responseBody) {
-        SendHttpRequest.responseBody = responseBody;
     }
 
 

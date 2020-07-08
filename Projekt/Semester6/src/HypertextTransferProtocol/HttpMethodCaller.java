@@ -1,3 +1,5 @@
+package HypertextTransferProtocol;
+
 import javax.net.ssl.HttpsURLConnection;
 import java.io.*;
 import java.net.HttpURLConnection;
