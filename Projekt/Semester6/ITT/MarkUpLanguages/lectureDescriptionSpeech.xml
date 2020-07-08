@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE Vorlesung SYSTEM "validateLectureDescriptionSpeech.dtd">
 <!--- Exercise 2 XML & DTDs validate created XML File
-use ValidateLectureDescriptionSpeech.dtd for validating XML -->
+use validateLectureDescriptionSpeech.dtd for validating XML -->
 <Vorlesung>
     <Titel>Software Engineering</Titel>
     <Semester>Sommersemester</Semester>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE Vorlesung SYSTEM "strongValidateLectureDescriptionSpeech.dtd">
 <!--- Exercise 2 XML & DTDs validate created XML File
-use StrongValidateLectureDescriptionSpeech.dtd for strictly validating XML -->
+use strongValidateLectureDescriptionSpeech7.dtd for strictly validating XML -->
 <Vorlesung>
     <Titel>Software Engineering</Titel>
     <Hochschule>Landshut</Hochschule>
@@ -19,15 +19,11 @@ use StrongValidateLectureDescriptionSpeech.dtd for strictly validating XML -->
     <Quelle quellenID="QDEA" >
         <Autor>Student xy</Autor>
         <Titel>Wikipedia</Titel>
-        <SourceType sourceSpecies="">
-            <Monographie/>
-        </SourceType>
+        <SourceType sourceSpecies="Monographie"/>
     </Quelle>
     <Quelle quellenID="QRE">
         <Autor>Scholz</Autor>
         <Titel>Deterministische Automaten</Titel>
-        <SourceType sourceSpecies="">
-            <Dissertation/>
-        </SourceType>
+        <SourceType sourceSpecies="Dissertation"/>
     </Quelle>
 </Vorlesung>

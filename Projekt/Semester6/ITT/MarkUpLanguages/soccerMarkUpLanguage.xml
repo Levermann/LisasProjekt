@@ -1,28 +1,34 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE Vorlesung SYSTEM "validateLectureDescriptionSpeech.dtd">
-<!--- Exercise 2 XML & DTDs validate created XML File
-use ValidateLectureDescriptionSpeech.dtd for validating XML -->
-<Vorlesung>
-    <Titel>Software Engineering</Titel>
-    <Semester>Sommersemester</Semester>
-    <Hochschule>Landshut</Hochschule>
-    <SWS>20</SWS>
-    <?myTool align=left?>
-    <Kapitel nummer="9" quelle="Q1">
-        <Name>Deterministische Automaten</Name>
-        <Termin>08.12.2020</Termin>
-    </Kapitel>
-    <Kapitel nummer="8">
-        <Name>Requirements Engineering</Name>
-        <Termin>09.12.2020</Termin>
-        <Termin>10.12.2020</Termin>
-    </Kapitel>
-    <Quelle quellenID="Q1">
-        <Autor>Student xy</Autor>
-        <Titel>Wikipedia</Titel>
-    </Quelle>
-    <Quelle quellenID="hallo">
-        <Autor>Scholz</Autor>
-        <Titel>Deterministische Automaten</Titel>
-    </Quelle>
-</Vorlesung>
+<!DOCTYPE Meisterschaft SYSTEM "validateSoccerMarkUpLanguage.dtd">
+<!--- Exercise 3 XML SML validate Soccer MarkUp Language
+use validateSoccerMarkUpLanguage.dtd for validating XML -->
+<Meisterschaft>
+    <Typ meisterschaftsart="WM"/>
+    <Beginn>17.07.2020</Beginn>
+    <Ende>19.07.2020</Ende>
+    <Mannschaft id="DieNettenMenschen">
+        <Name>FC Bayern München</Name>
+        <Land>Deutschland</Land>
+        <Trainer>Hansi Flick</Trainer>
+        <Spieler position="Verteidiger"/>
+        <Spieler position="Mittelfeld"/>
+        <Spieler position="Torwart"/>
+        <Erfolg>
+            <Titel>UEFA Cup Sieger</Titel>
+            <Jahr>1996</Jahr>
+        </Erfolg>
+        <Erfolg>
+            <Titel>Die Flotten Karotten</Titel>
+            <Jahr>1998</Jahr>
+        </Erfolg>
+    </Mannschaft>
+    <Mannschaft id="DieNettenMenschen2">
+        <Name>Real Madrid</Name>
+        <Land>Spanien</Land>
+        <Trainer>Zinedine Zidane</Trainer>
+        <Spieler position="Verteidiger"/>
+        <Spieler position="Mittelfeld"/>
+        <Spieler position="Torwart"/>
+    </Mannschaft>
+    <Spiel heim="DieNettenMenschen" gast="DieNettenMenschen2" ergebnis="Bub"/>
+</Meisterschaft>

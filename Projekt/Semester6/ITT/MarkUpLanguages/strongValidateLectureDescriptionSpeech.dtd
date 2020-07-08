@@ -13,8 +13,10 @@
         <!ELEMENT Termin (#PCDATA)>
         <!ELEMENT Quelle (Autor+,Titel, SourceType)>
         <!ATTLIST Quelle quellenID ID #REQUIRED>
-        <!ELEMENT SourceType (Monographie| Artikel| Dissertation| Abschlussarbeit) (#PCDATA)>
-        <!ATTLIST SourceType sourceSpecies Enumeration #REQUIRED>
+
+        <!ELEMENT SourceType (#PCDATA)>
+        <!ATTLIST SourceType sourceSpecies (Monographie| Artikel| Dissertation| Abschlussarbeit) #REQUIRED>
+
         <!ELEMENT Autor (#PCDATA)>
         <!ELEMENT Monographie (#PCDATA)>
         <!ELEMENT Artikel (#PCDATA)>

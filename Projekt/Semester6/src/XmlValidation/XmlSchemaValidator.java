@@ -17,7 +17,7 @@ import java.util.List;
 
 public class XmlSchemaValidator {
 
-    private static final List<String> xmlPaths = Arrays.asList("ITT/MarkUpLanguages/lectureDescriptionSpeech.xml", "ITT/MarkUpLanguages/strongLectureDescriptionSpeech.xml");
+    private static final List<String> xmlPaths = Arrays.asList("ITT/MarkUpLanguages/lectureDescriptionSpeech.xml", "ITT/MarkUpLanguages/strongLectureDescriptionSpeech.xml", "ITT/MarkUpLanguages/soccerMarkUpLanguage.xml");
 
         public static void main(String[] args) {
 

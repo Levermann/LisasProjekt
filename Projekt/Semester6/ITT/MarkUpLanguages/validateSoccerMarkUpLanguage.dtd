@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+        <!---Exercise 3 XML this DTD File describes the structure of the SML validate Soccer MarkUp Language -->
+        <!ELEMENT Meisterschaft (Typ*, Beginn, Ende, Mannschaft+, Spiel+)>
+        <!ELEMENT Typ (#PCDATA)>
+        <!ATTLIST Typ meisterschaftsart (EM| WM) #IMPLIED>
+        <!ELEMENT Beginn (#PCDATA)>
+        <!ELEMENT Ende (#PCDATA)>
+
+        <!ELEMENT Mannschaft (Name, Land, Trainer, Spieler+,Erfolg*)>
+        <!ATTLIST Mannschaft id ID #REQUIRED>
+        <!ELEMENT Name (#PCDATA)>
+        <!ELEMENT Land (#PCDATA)>
+        <!ELEMENT Trainer (#PCDATA)>
+        <!ELEMENT Spieler (#PCDATA)>
+        <!ATTLIST Spieler position (Torwart | Verteidiger | Mittelfeld | Stürmer) #REQUIRED>
+
+        <!ELEMENT Erfolg (Freitext*, Titel, Jahr)>
+        <!ELEMENT Freitext (#PCDATA)>
+        <!ELEMENT Titel (#PCDATA)>
+        <!ELEMENT Jahr (#PCDATA)>
+
+        <!ELEMENT Spiel EMPTY>
+        <!ATTLIST Spiel
+                heim IDREF #REQUIRED
+                gast IDREF #REQUIRED
+                ergebnis CDATA #IMPLIED
+        >
+
+
