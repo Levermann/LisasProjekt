@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Vorlesung SYSTEM "ValidateLectureDescriptionSpeech.dtd">
+
+<Vorlesung>
+    <Titel>Software Engineering</Titel>
+    <Semester>Sommersemester</Semester>
+    <Hochschule>Landshut</Hochschule>
+    <SWS>20</SWS>
+    <?myTool align=left?>
+    <Kapitel nummer="9" quelle="Q1">
+        <Name>Deterministische Automaten</Name>
+        <Termin>08.12.2020</Termin>
+    </Kapitel>
+    <Kapitel nummer="8">
+        <Name>Requirements Engineering</Name>
+        <Termin>09.12.2020</Termin>
+        <Termin>10.12.2020</Termin>
+    </Kapitel>
+    <Quelle quellenID="Q1">
+        <Autor>Student xy</Autor>
+        <Titel>Wikipedia</Titel>
+    </Quelle>
+    <Quelle quellenID="hallo">
+        <Autor>Scholz</Autor>
+        <Titel>Deterministische Automaten</Titel>
+    </Quelle>
+</Vorlesung>
