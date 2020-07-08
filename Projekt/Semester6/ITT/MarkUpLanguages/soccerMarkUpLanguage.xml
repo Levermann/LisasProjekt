@@ -2,11 +2,10 @@
 <!DOCTYPE Meisterschaft SYSTEM "validateSoccerMarkUpLanguage.dtd">
 <!--- Exercise 3 XML SML validate Soccer MarkUp Language
 use validateSoccerMarkUpLanguage.dtd for validating XML -->
-<Meisterschaft>
-    <Typ meisterschaftsart="WM"/>
+<Meisterschaft typ="WM">
     <Beginn>17.07.2020</Beginn>
     <Ende>19.07.2020</Ende>
-    <Mannschaft id="DieNettenMenschen">
+    <Mannschaft id="EN">
         <Name>FC Bayern München</Name>
         <Land>Deutschland</Land>
         <Trainer>Hansi Flick</Trainer>
@@ -17,12 +16,13 @@ use validateSoccerMarkUpLanguage.dtd for validating XML -->
             <Titel>UEFA Cup Sieger</Titel>
             <Jahr>1996</Jahr>
         </Erfolg>
-        <Erfolg>
-            <Titel>Die Flotten Karotten</Titel>
-            <Jahr>1998</Jahr>
+        <Erfolg>Die Mannschaft ist 2 maliger
+            <Titel> Champions League Sieger</Titel>
+            , zuletzt im
+            <Jahr>2015</Jahr>
         </Erfolg>
     </Mannschaft>
-    <Mannschaft id="DieNettenMenschen2">
+    <Mannschaft id="DE">
         <Name>Real Madrid</Name>
         <Land>Spanien</Land>
         <Trainer>Zinedine Zidane</Trainer>
@@ -30,5 +30,5 @@ use validateSoccerMarkUpLanguage.dtd for validating XML -->
         <Spieler position="Mittelfeld"/>
         <Spieler position="Torwart"/>
     </Mannschaft>
-    <Spiel heim="DieNettenMenschen" gast="DieNettenMenschen2" ergebnis="Bub"/>
+    <Spiel heim="DE" gast="EN" ergebnis="1:19"/>
 </Meisterschaft>

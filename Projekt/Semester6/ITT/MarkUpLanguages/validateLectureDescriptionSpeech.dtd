@@ -13,5 +13,3 @@
         <!ELEMENT Quelle (Autor+,Titel)*>
         <!ATTLIST Quelle quellenID ID #REQUIRED>
         <!ELEMENT Autor (#PCDATA)>
-
-

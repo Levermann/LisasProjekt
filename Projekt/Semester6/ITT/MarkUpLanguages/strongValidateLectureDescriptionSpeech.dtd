@@ -22,4 +22,3 @@
         <!ELEMENT Artikel (#PCDATA)>
         <!ELEMENT Dissertation (#PCDATA)>
         <!ELEMENT Abschlussarbeit (#PCDATA)>
-
