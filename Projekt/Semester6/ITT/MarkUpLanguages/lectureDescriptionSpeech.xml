@@ -1,34 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE Vorlesung SYSTEM
-        "C:\Users\Lisa\IdeaProjects\Projekt\Semester6\ITT\MarkUpLanguages\StrongValidateLectureDescriptionSpeech.dtd">
+<!DOCTYPE Vorlesung SYSTEM "validateLectureDescriptionSpeech.dtd">
 <!--- Exercise 2 XML & DTDs validate created XML File
-use StrongValidateLectureDescriptionSpeech.dtd for strictly validating XML -->
+use ValidateLectureDescriptionSpeech.dtd for validating XML -->
 <Vorlesung>
     <Titel>Software Engineering</Titel>
+    <Semester>Sommersemester</Semester>
     <Hochschule>Landshut</Hochschule>
     <SWS>20</SWS>
-    <Semester>Sommersemester</Semester>
-    <Kapitel nummer="9" quelle="QDEA" >
+    <?myTool align=left?>
+    <Kapitel nummer="9" quelle="Q1">
         <Name>Deterministische Automaten</Name>
         <Termin>08.12.2020</Termin>
     </Kapitel>
-    <Kapitel nummer="8" quelle="QRE" bewertung="34">
+    <Kapitel nummer="8">
         <Name>Requirements Engineering</Name>
         <Termin>09.12.2020</Termin>
         <Termin>10.12.2020</Termin>
     </Kapitel>
-    <Quelle quellenID="QDEA" >
+    <Quelle quellenID="Q1">
         <Autor>Student xy</Autor>
         <Titel>Wikipedia</Titel>
-        <SourceType sourceSpecies="">
-            <Monographie/>
-        </SourceType>
     </Quelle>
-    <Quelle quellenID="QRE">
+    <Quelle quellenID="hallo">
         <Autor>Scholz</Autor>
         <Titel>Deterministische Automaten</Titel>
-        <SourceType sourceSpecies="">
-            <Dissertation/>
-        </SourceType>
     </Quelle>
 </Vorlesung>

@@ -1,7 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-        <!---Exercise 2 XML & DTDs d) This DTD File describes some stronger validation for VLML
-         <!ATTLIST Kapitel bewertung IDREF #IMPLIED>
-         <!ATTLIST Kapitel quelle Enumeration #REQUIRED>-->
+        <!---Exercise 2 XML & DTDs d) This DTD File describes some stronger validation for VLML-->
         <!ELEMENT Vorlesung (Titel, Hochschule*, SWS, Semester, Kapitel+, Quelle+)>
         <!ELEMENT Titel (#PCDATA)>
         <!ELEMENT Semester (#PCDATA)>
