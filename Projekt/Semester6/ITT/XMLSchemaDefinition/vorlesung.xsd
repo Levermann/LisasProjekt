@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="Vorlesung">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="Titel" type="xsd:string"></xsd:element>
+                <xsd:element name="Semester" type="xsd:string" maxOccurs="unbounded"></xsd:element>
+                <xsd:element name="Hochschule" type="xsd:string"></xsd:element>
+                <xsd:element name="SWS" type="xsd:int"></xsd:element>
+                <xsd:element name="Kapitel" maxOccurs="unbounded">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="Name" type="xsd:string"></xsd:element>
+                            <xsd:element name="Termin" type="xsd:int" maxOccurs="unbounded"></xsd:element>
+                        </xsd:sequence>
+                        <xsd:attribute name="nummer" type="xsd:int"></xsd:attribute>
+                        <xsd:attribute name="quelle" type="xsd:IDREFS"></xsd:attribute>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="Quelle">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="Autor" type="xsd:string" maxOccurs="unbounded"></xsd:element>
+                            <xsd:element name="Titel" type="xsd:string"></xsd:element>
+                        </xsd:sequence>
+                        <xsd:attribute name="quellenID" type="xsd:ID"></xsd:attribute>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

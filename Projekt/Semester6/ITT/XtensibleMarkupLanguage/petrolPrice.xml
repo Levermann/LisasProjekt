@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE Preisübersicht SYSTEM "C:\Users\Lisa\IdeaProjects\Projekt\Semester6\ITT\DocumentTypeDefinition\petrolPriceValidation.dtd">
-<!--- Exercise 2 XML & DTDs validate created XML File
-use validateLectureDescriptionSpeech.dtd for validating XML -->
 <Preisübersicht datum="20.07.2020">
     <Tankstelle pächterId="PW2" mineralölgesellschaft="MÖG_DORTMUND">
         <Name>Aral</Name>

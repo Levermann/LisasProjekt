@@ -15,20 +15,12 @@ import java.io.*;
 import java.util.Arrays;
 import java.util.List;
 
+
 public class XmlSchemaValidator {
 
-    private static final List<String> xmlPaths = Arrays.asList("ITT/XtensibleMarkupLanguage/lectureDescription.xml", "ITT/XtensibleMarkupLanguage/strongLectureDescription.xml", "ITT/XtensibleMarkupLanguage/soccer.xml" , "ITT/XtensibleMarkupLanguage/petrolPrice.xml");
+    private static final List<String> xmlPaths = Arrays.asList(Constants.LECTURE_DESCTIPTION_XML_PATH, Constants.STRONG_LECTURE_DESCRIPTION_XML_PATH, Constants.SOCCER_XML_PATH , Constants.PETROL_PRICE_XML_PATH);
 
         public static void main(String[] args) {
-
-            /*for (String string : xmlPaths) {
-                if (isValidXML(string)) {
-                    final String fileName = removeSubstring(string);
-                    System.out.println("the XML File " + fileName + " has passed validation successfully ");
-                }
-            }
-            */
-
 
             try {
                 for (String string : xmlPaths) {
@@ -42,12 +34,17 @@ public class XmlSchemaValidator {
             } catch (Exception e){
                 System.out.println("the XML File " + e + " Exception occured");
             }
+            if(isValidXMLAgainstXsdSchema(Constants.VORLESUNG_XSD_PATH,Constants.VORLESUNG_XML_PATH)){
+                System.out.println("File Validation VORLESUNG with xsd worked fine");
+            }
+            if(isValidXMLAgainstXsdSchema(Constants.VOTING_VALIDATION_XSD_PATH,Constants.VOTING_XML_PATH)){
+                System.out.println("File Validation VOTING with xsd worked fine");
+            }
         }
 
-
     private static String removeSubstring(String str) {
-        int startIndex = str.indexOf("ITT/XtensibleMarkupLanguage/");
-        int stopIndex = startIndex + "ITT/XtensibleMarkupLanguage/".length();
+        int startIndex = str.indexOf(Constants.PATH_TO_FILES);
+        int stopIndex = startIndex + Constants.PATH_TO_FILES.length();
         StringBuilder builder = new StringBuilder(str);
         builder.delete(startIndex, stopIndex);
         return builder.toString();

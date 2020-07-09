@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Vorlesung
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../XMLSchemaDefinition/vorlesung.xsd">
+    <Titel>Internettechnologien</Titel>
+    <Semester> Sommersemester </Semester>
+    <Hochschule> HAW Landshut </Hochschule>
+    <SWS> 4 </SWS>
+    <?myTool align=left?> <!-- Anweisung an myTool-->
+    <Kapitel nummer="1">
+        <Name>Einführung</Name>
+        <Termin> 1 </Termin>
+    </Kapitel>
+    <Kapitel nummer="2" quelle="Q1">
+        <Name>Grundlagen von Netzwerken</Name>
+        <Termin> 2 </Termin>
+    </Kapitel>
+    <Kapitel nummer="3">
+        <Name>XML</Name>
+        <Termin> 4 </Termin>
+    </Kapitel>
+    <Kapitel nummer="4">
+        <Name>HTML &amp; CSS</Name>
+        <Termin> 7 </Termin>
+    </Kapitel>
+    <Quelle quellenID="Q1">
+        <Autor> Balzert, Helmut</Autor>
+        <Titel> Lehrbuch der SW-Technik</Titel>
+    </Quelle>
+</Vorlesung>

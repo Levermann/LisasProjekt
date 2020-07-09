@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wahl
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../XMLSchemaDefinition/votingValidation.xsd">
+    <Wahltag>2001-12-26</Wahltag>
+    <Wahlbeginn>08:45:02</Wahlbeginn>
+    <Wahlende>18:00:00</Wahlende>
+    <Parteien ergebnis="IDE" isBundesweit="false">
+        <Name>Einführung</Name>
+        <Kandidaten>
+            <Name>Hans</Name>
+            <Geburtsdatum>2001-10-26</Geburtsdatum>
+            <Beruf>Handweker aus Leidenschaft</Beruf>
+            <Listenplatz>1</Listenplatz>
+            <Erststimmen>70.8</Erststimmen>
+        </Kandidaten>
+        <Kandidaten>
+            <Name>sepp</Name>
+            <Geburtsdatum>2002-10-09-11:00</Geburtsdatum>
+            <Beruf>Tierarzt aus Leidenschaft</Beruf>
+            <Listenplatz>144</Listenplatz>
+            <Erststimmen>10.8</Erststimmen>
+        </Kandidaten>
+        <Kandidaten>
+            <Name>Paulina</Name>
+            <Geburtsdatum>2002-10-09-11:00</Geburtsdatum>
+            <Beruf>Tierarzt aus Leidenschaft</Beruf>
+            <Listenplatz>144</Listenplatz>
+            <Erststimmen>10.8</Erststimmen>
+        </Kandidaten>
+    </Parteien>
+    <Parteien ergebnis="PHPMyAdmin" isBundesweit="false">
+        <Name>Einführung</Name>
+        <Kandidaten>
+            <Name>Hans</Name>
+            <Geburtsdatum>2001-12-26</Geburtsdatum>
+            <Beruf>Handweker aus Leidenschaft</Beruf>
+            <Listenplatz>1</Listenplatz>
+            <Erststimmen>70.8</Erststimmen>
+        </Kandidaten>
+        <Kandidaten>
+            <Name>Felix</Name>
+            <Geburtsdatum>2002-10-09-11:00</Geburtsdatum>
+            <Beruf>Tierarzt aus Leidenschaft</Beruf>
+            <Listenplatz>144</Listenplatz>
+            <Erststimmen>10.8</Erststimmen>
+        </Kandidaten>
+        <Kandidaten>
+            <Name>Natalie</Name>
+            <Geburtsdatum>2002-10-09-11:00</Geburtsdatum>
+            <Beruf>Tierarzt aus Leidenschaft</Beruf>
+            <Listenplatz>144</Listenplatz>
+            <Erststimmen>10.8</Erststimmen>
+        </Kandidaten>
+    </Parteien>
+    <Wahlergebnis>
+        <Zweitstimme partei="IDE">22.5</Zweitstimme>
+        <Zweitstimme partei="PHPMyAdmin">88.5</Zweitstimme>
+    </Wahlergebnis>
+</Wahl>

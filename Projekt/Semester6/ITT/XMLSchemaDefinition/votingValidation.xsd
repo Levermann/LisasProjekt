@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:simpleType name="percent" id="percent">
+        <xsd:restriction base="xsd:decimal">
+            <xsd:fractionDigits value="2"/>
+            <xsd:minInclusive value="0" id="percent.minInclusive"/>
+            <xsd:maxInclusive value="100" id="percent.maxInclusive"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:element name="Wahl">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="Wahltag" type="xsd:date"></xsd:element>
+                <xsd:element name="Wahlbeginn" type="xsd:time"></xsd:element>
+                <xsd:element name="Wahlende" type="xsd:time"></xsd:element>
+                <xsd:element name="Parteien" minOccurs="2" maxOccurs="100">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="Name"></xsd:element>
+                            <xsd:element name="Kandidaten" minOccurs="3" maxOccurs="25">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="Name" type="xsd:string"></xsd:element>
+                                        <xsd:element name="Geburtsdatum" type="xsd:date"></xsd:element>
+                                        <xsd:element name="Beruf" type="xsd:string" maxOccurs="unbounded"></xsd:element>
+                                        <xsd:element name="Listenplatz" type="xsd:string"></xsd:element>
+                                        <xsd:element name="Erststimmen" type="percent"></xsd:element>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                        <xsd:attribute name="ergebnis" type="xsd:IDREFS"></xsd:attribute>
+                        <xsd:attribute name="isBundesweit" type="xsd:boolean"></xsd:attribute>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="Wahlergebnis">
+                    <xsd:complexType mixed="true">
+                        <xsd:choice>
+                            <xsd:element name="Zweitstimme" maxOccurs="unbounded">
+                                <xsd:complexType>
+                                    <xsd:simpleContent>
+                                        <xsd:extension base="percent">
+                                            <xsd:attribute name="partei" type="xsd:ID"/>
+                                        </xsd:extension>
+                                    </xsd:simpleContent>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:choice>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+            <xsd:attribute name="wahltyp">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:enumeration value="Landtagswahl"/>
+                        <xsd:enumeration value="Bundestagswahl"/>
+                        <xsd:enumeration value="Europawahl"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:attribute>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>
