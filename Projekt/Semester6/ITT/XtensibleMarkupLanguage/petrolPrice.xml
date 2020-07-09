@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Preisübersicht SYSTEM "C:\Users\Lisa\IdeaProjects\Projekt\Semester6\ITT\DocumentTypeDefinition\petrolPriceValidation.dtd">
+<!--- Exercise 2 XML & DTDs validate created XML File
+use validateLectureDescriptionSpeech.dtd for validating XML -->
+<Preisübersicht datum="20.07.2020">
+    <Tankstelle pächterId="PW2" mineralölgesellschaft="MÖG_DORTMUND">
+        <Name>Aral</Name>
+        <Adresse>Oberndorferstraße</Adresse>
+        <Geodaten>Koordinaten (x,y,z)</Geodaten>
+        <Preise>
+            <Preis kraftstoffart="Diesel">42,66</Preis>
+            <Preis kraftstoffart="SuperPlus">88,66</Preis>
+        </Preise>
+    </Tankstelle>
+    <Pächter pächterId="PW2">
+        <Name>Hans Herrlich</Name>
+        <Adresse>Waldmeisterstraße 12</Adresse>, am Heringsring 43
+    </Pächter>
+    <Mineralölgesellschaft mögId="MÖG_DORTMUND">
+        <Name>Mineralölgesellschaft Dortmund AG</Name>
+        <Adresse>in Dortmund</Adresse>
+        <Mailadresse>info&AT;mög_dortmund.de</Mailadresse>
+    </Mineralölgesellschaft>
+    <Option>I like it</Option>
+</Preisübersicht>

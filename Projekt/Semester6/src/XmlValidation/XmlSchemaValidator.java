@@ -17,23 +17,37 @@ import java.util.List;
 
 public class XmlSchemaValidator {
 
-    private static final List<String> xmlPaths = Arrays.asList("ITT/MarkUpLanguages/lectureDescriptionSpeech.xml", "ITT/MarkUpLanguages/strongLectureDescriptionSpeech.xml", "ITT/MarkUpLanguages/soccerMarkUpLanguage.xml");
+    private static final List<String> xmlPaths = Arrays.asList("ITT/XtensibleMarkupLanguage/lectureDescription.xml", "ITT/XtensibleMarkupLanguage/strongLectureDescription.xml", "ITT/XtensibleMarkupLanguage/soccer.xml" , "ITT/XtensibleMarkupLanguage/petrolPrice.xml");
 
         public static void main(String[] args) {
 
-            for(String string : xmlPaths){
-                if(isValidXML(string)){
+            /*for (String string : xmlPaths) {
+                if (isValidXML(string)) {
                     final String fileName = removeSubstring(string);
                     System.out.println("the XML File " + fileName + " has passed validation successfully ");
                 }
             }
+            */
 
+
+            try {
+                for (String string : xmlPaths) {
+                    if (isValidXML(string)) {
+                        final String fileName = removeSubstring(string);
+                        System.out.println("the XML File " + fileName + " has passed validation successfully ");
+                    } else{
+                        System.out.println("Error for " + string + " occured");
+                    }
+                }
+            } catch (Exception e){
+                System.out.println("the XML File " + e + " Exception occured");
+            }
         }
 
 
     private static String removeSubstring(String str) {
-        int startIndex = str.indexOf("ITT/MarkUpLanguages/");
-        int stopIndex = startIndex + "ITT/MarkUpLanguages/".length();
+        int startIndex = str.indexOf("ITT/XtensibleMarkupLanguage/");
+        int stopIndex = startIndex + "ITT/XtensibleMarkupLanguage/".length();
         StringBuilder builder = new StringBuilder(str);
         builder.delete(startIndex, stopIndex);
         return builder.toString();

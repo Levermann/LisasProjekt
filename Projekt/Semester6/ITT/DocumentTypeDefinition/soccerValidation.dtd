@@ -12,9 +12,9 @@
         <!ELEMENT Land (#PCDATA)>
         <!ELEMENT Trainer (#PCDATA)>
         <!ELEMENT Spieler (#PCDATA)>
-        <!ATTLIST Spieler position (Torwart|Verteidiger|Mittelfeld|Stürmer) #REQUIRED>
+        <!ATTLIST Spieler position (Torwart | Verteidiger | Mittelfeld | Stürmer) #REQUIRED>
 
-        <!ELEMENT Erfolg (#PCDATA | Titel | Jahr)*>
+        <!ELEMENT Erfolg (#PCDATA|Titel|Jahr)*>
         <!ELEMENT Titel (#PCDATA)>
         <!ELEMENT Jahr (#PCDATA)>
 

@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+        <!---Blatt 2 Aufgabe 1: DTD zur Benzinpreis Markup Language -->
+        <!NOTATION gif SYSTEM "image/gif">
+        <!NOTATION jpg PUBLIC "JPG 1.0" "image/jpg">
+        <!ENTITY % StringElem "(#PCDATA)">
+        <!ENTITY % StringAttr "DATA">
+        <!ENTITY Foto SYSTEM "http://www.x.x/images/logo.gif" NDATA gif>
+        <!ENTITY AT "&#x040;">
+
+        <!ELEMENT Preisübersicht (Tankstelle+, Pächter+, Mineralölgesellschaft*, Option*)>
+        <!ATTLIST Preisübersicht datum CDATA #REQUIRED>
+
+        <!ELEMENT Tankstelle (Name, Adresse, Geodaten, Beschreibung*, Preise)>
+        <!ATTLIST Tankstelle pächterId IDREF #REQUIRED>
+        <!ATTLIST Tankstelle mineralölgesellschaft IDREF #REQUIRED>
+        <!ATTLIST Tankstelle bewertung (1|2|3|4|5|6) #IMPLIED>
+        <!ATTLIST Tankstelle Foto ENTITY #IMPLIED>
+
+        <!ELEMENT Name %StringElem;>
+        <!ELEMENT Adresse %StringElem;>
+        <!ELEMENT Geodaten %StringElem;>
+        <!ELEMENT Beschreibung %StringElem;>
+        <!ELEMENT Preise (Preis)*>
+        <!ELEMENT Preis %StringElem;>
+        <!ATTLIST Preis kraftstoffart
+                (E10|Super|Diesel|SuperPlus) #REQUIRED>
+
+        <!ELEMENT Pächter (#PCDATA|Name|Adresse)*>
+        <!ATTLIST Pächter pächterId ID #REQUIRED>
+
+        <!ELEMENT Mineralölgesellschaft (Name,Adresse,Mailadresse)>
+        <!ELEMENT Mailadresse %StringElem;>
+        <!ATTLIST Mineralölgesellschaft mögId ID #REQUIRED>
+
+        <!ELEMENT Option ANY>
+
+
+

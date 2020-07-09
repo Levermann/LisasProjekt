@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+        <!---Exercise 2 XML & DTDs d) This DTD File describes stronger validation for VLML-->
+        <!ELEMENT Vorlesung (Titel, Hochschule+, SWS, Semester, Kapitel+, Quelle+)>
+        <!ELEMENT Titel (#PCDATA)>
+        <!ELEMENT Semester (#PCDATA)>
+        <!ELEMENT Hochschule (#PCDATA)>
+        <!ELEMENT SWS (#PCDATA)>
+        <!ELEMENT Kapitel (Name,Termin+)>
+        <!ATTLIST Kapitel nummer CDATA #REQUIRED>
+        <!ATTLIST Kapitel quelle IDREF #REQUIRED>
+        <!ATTLIST Kapitel bewertung CDATA "1">
+        <!ELEMENT Name (#PCDATA)>
+        <!ELEMENT Termin (#PCDATA)>
+        <!ELEMENT Quelle (Autor+,Titel)>
+        <!ATTLIST Quelle quellenID ID #REQUIRED>
+        <!ATTLIST Quelle typ (Monographie| Artikel| Dissertation| Abschlussarbeit) #REQUIRED>
+        <!ELEMENT Autor (#PCDATA)>

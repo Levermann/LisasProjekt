@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE Meisterschaft SYSTEM "validateSoccerMarkUpLanguage.dtd">
+<!DOCTYPE Meisterschaft SYSTEM "C:\Users\Lisa\IdeaProjects\Projekt\Semester6\ITT\DocumentTypeDefinition\soccerValidation.dtd">
 <!--- Exercise 3 XML SML validate Soccer MarkUp Language
 use validateSoccerMarkUpLanguage.dtd for validating XML -->
 <Meisterschaft typ="WM">
