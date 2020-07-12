@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT Books (Autor, titel, chapter+,toc)>
+<!ELEMENT Autor (Vorname, Nachname)>
+<!ELEMENT Vorname (#PCDATA)>
+<!ELEMENT Nachname (#PCDATA)>
+<!ELEMENT titel (#PCDATA)>
+<!ELEMENT toc (entry)+>
+<!ELEMENT entry (#PCDATA)>
+<!ATTLIST entry id IDREF #REQUIRED>
+<!ELEMENT chapter (title, Inhalt)>
+<!ATTLIST chapter id ID #REQUIRED>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT Inhalt (#PCDATA)>
+
+

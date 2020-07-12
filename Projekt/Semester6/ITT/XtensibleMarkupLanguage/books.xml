@@ -1,0 +1,230 @@
+<Bibliothek name="HAW Landshut">
+    <Ausgabestelle name="Mensa"/>
+    <Standort name="Ruhstorf">
+        <Ausgabestelle name="Ruhstorf">
+            <Regal zaehler="1">
+                <Buch>
+                    <Titel>Gegner im Winter </Titel>
+                    <Autor>Leah Zweig</Autor>
+                    <Autor>Mike Feierabend</Autor>
+                    <Seiten>188</Seiten>
+                </Buch>
+                <Buch>
+                    <Titel>Königinnen der Tasche </Titel>
+                    <Autor>Anne Lehmann</Autor>
+                    <Seiten>356</Seiten>
+                </Buch>
+                <Buch>
+                    <Titel>Verkalkte Noten ohne Strauß </Titel>
+                    <Autor>Mathias Ackerman</Autor>
+                    <Seiten>3035</Seiten>
+                </Buch>
+                <Buch>
+                    <Titel>Verkalkte Meise am Meer </Titel>
+                    <Autor>Leah Zweig</Autor>
+                    <Autor>Maximilian Dietrich</Autor>
+                    <Seiten>49</Seiten>
+                </Buch>
+            </Regal>
+            <Regal zaehler="2">
+                <Buch>
+                    <Titel>Patronenmächte</Titel>
+                    <Autor>Annett Duerr</Autor>
+                    <Autor>Max Koenig</Autor>
+                    <Seiten>188</Seiten>
+                </Buch>
+                <Buch>
+                    <Titel>Die Teufel mit Club</Titel>
+                    <Autor>Thomas Moench</Autor>
+                    <Seiten>216</Seiten>
+                </Buch>
+                <Buch>
+                    <Titel>Keine auffälligen Insekten des Pfeils</Titel>
+                    <Autor>Thomas Schröder</Autor>
+                    <Seiten>301</Seiten>
+                </Buch>
+                <Buch>
+                    <Titel>Die pragmatischen Geschäfte auf hoher See</Titel>
+                    <Autor>Leah Zweig</Autor>
+                    <Autor>Annett Duerr</Autor>
+                    <Seiten>249</Seiten>
+                </Buch>
+            </Regal>
+        </Ausgabestelle>
+    </Standort>
+    <Standort name="Landshut">
+        <Ausgabestelle name="Mensa">
+            <Regal zaehler="1">
+                <Buch>
+                    <Titel>Nöte mit Mannschaften </Titel>
+                    <Autor>Annett Duerr</Autor>
+                    <Autor>Anna Foerster</Autor>
+                    <Seiten>144</Seiten>
+                </Buch>
+                <Buch>
+                    <Titel>Vertragskeller </Titel>
+                    <Autor>Thomas Ackerman</Autor>
+                    <Seiten>362</Seiten>
+                </Buch>
+                <Buch>
+                    <Titel>Strenger Besen und ein Schuss </Titel>
+                    <Autor>Anna Foerster</Autor>
+                    <Seiten>252</Seiten>
+                </Buch>
+                <Buch>
+                    <Titel>Mörder ohne Freundschaften </Titel>
+                    <Autor>Sophie Thalberg</Autor>
+                    <Autor>Juliane Schaefer</Autor>
+                    <Seiten>168</Seiten>
+                </Buch>
+            </Regal>
+            <Regal zaehler="2">
+                <Buch>
+                    <Titel>Pakte der gesprächigen Pforten </Titel>
+                    <Autor>Angelika Keller</Autor>
+                    <Autor>Kerstin Friedman</Autor>
+                    <Seiten>56</Seiten>
+                </Buch>
+                <Buch>
+                    <Titel>Eine abgedeckte Flocke zum Sterben </Titel>
+                    <Autor>Andreas Oster</Autor>
+                    <Seiten>286</Seiten>
+                </Buch>
+                <Buch>
+                    <Titel>Intrigen mit Marsch </Titel>
+                    <Autor>Sophie Thalberg</Autor>
+                    <Seiten>245</Seiten>
+                </Buch>
+                <Buch>
+                    <Titel>Untreuer Drang, nasser Marsch </Titel>
+                    <Autor>Marina Unger</Autor>
+                    <Seiten>123</Seiten>
+                </Buch>
+            </Regal>
+            <Regal zaehler="3">
+                <Buch>
+                    <Titel>Tourist der Jugend </Titel>
+                    <Autor>Sarah Farber</Autor>
+                    <Seiten>103</Seiten>
+                </Buch>
+                <Buch>
+                    <Titel>Spektakuläre Säbel, schnöde Barbiere </Titel>
+                    <Autor>Melanie Möller</Autor>
+                    <Seiten>2567</Seiten>
+                </Buch>
+                <Buch>
+                    <Titel>Unkende Faust, träger Stock </Titel>
+                    <Autor>Petra Fischer</Autor>
+                    <Seiten>333</Seiten>
+                </Buch>
+                <Buch>
+                    <Titel>Poplige Münder und die Unabhängigkeit </Titel>
+                    <Autor>Benjamin Schaefer</Autor>
+                    <Autor>Christin Shuster</Autor>
+                    <Seiten>987</Seiten>
+                </Buch>
+            </Regal>
+        </Ausgabestelle>
+        <Ausgabestelle name="J-Gebäude">
+            <Regal zaehler="1">
+                <Buch>
+                    <Titel>Villa der Kruste </Titel>
+                    <Autor>Melanie Möller</Autor>
+                    <Autor>Sarah Farber</Autor>
+                    <Seiten>765</Seiten>
+                </Buch>
+                <Buch>
+                    <Titel>Meine Ängste mit Tümpeln </Titel>
+                    <Autor>Benjamin Schaefer</Autor>
+                    <Seiten>99</Seiten>
+                </Buch>
+                <Buch>
+                    <Titel>Prinzessinen der Arenen </Titel>
+                    <Autor>Ursula Freud</Autor>
+                    <Seiten>239</Seiten>
+                </Buch>
+                <Buch>
+                    <Titel>Gaben der Grenzen </Titel>
+                    <Autor>Leah Zweig</Autor>
+                    <Autor>Ursula Freud</Autor>
+                    <Seiten>75</Seiten>
+                </Buch>
+            </Regal>
+        </Ausgabestelle>
+    </Standort>
+    <Standort name="Dingolfing">
+        <Ausgabestelle name="Dingolfing">
+            <Regal zaehler="1">
+                <Buch>
+                    <Titel>Ein Schlaf ohne Neffen </Titel>
+                    <Autor>Annett Duerr</Autor>
+                    <Autor>Bernd Winkel</Autor>
+                    <Seiten>909</Seiten>
+                </Buch>
+                <Buch>
+                    <Titel>Tassenrisiken </Titel>
+                    <Autor>Thomas Moench</Autor>
+                    <Seiten>122</Seiten>
+                </Buch>
+                <Buch>
+                    <Titel>Empfindsame Stiere am Ende des Tages </Titel>
+                    <Autor>David Feierabend</Autor>
+                    <Seiten>12</Seiten>
+                </Buch>
+                <Buch>
+                    <Titel>Adler mit Herrlichkeiten </Titel>
+                    <Autor>Petra Brauer</Autor>
+                    <Autor>Markus Seiler</Autor>
+                    <Seiten>168</Seiten>
+                </Buch>
+            </Regal>
+            <Regal zaehler="2">
+                <Buch>
+                    <Titel>Ein Moment mit Turbine </Titel>
+                    <Autor>Marko Kortig</Autor>
+                    <Autor>Eric Wulf</Autor>
+                    <Seiten>185</Seiten>
+                </Buch>
+                <Buch>
+                    <Titel>Die Tauben am See </Titel>
+                    <Autor>Andreas Gärtner</Autor>
+                    <Seiten>206</Seiten>
+                </Buch>
+                <Buch>
+                    <Titel>Nervige Seelen mit Häme </Titel>
+                    <Autor>Sophie Fuerst</Autor>
+                    <Seiten>304</Seiten>
+                </Buch>
+                <Buch>
+                    <Titel>Dein glimmender Strumpf ohne Sessel </Titel>
+                    <Autor>Leah Zweig</Autor>
+                    <Autor>Dominik Schwab</Autor>
+                    <Seiten>243</Seiten>
+                </Buch>
+            </Regal>
+            <Regal zaehler="3">
+                <Buch>
+                    <Titel>Unsere Symphatisanten </Titel>
+                    <Autor>Jan Schwartz</Autor>
+                    <Autor>Jessica Ritter</Autor>
+                    <Seiten>456</Seiten>
+                </Buch>
+                <Buch>
+                    <Titel>Unsere Sammlungen des Gesichts </Titel>
+                    <Autor>Jessica Ritter</Autor>
+                    <Seiten>1234</Seiten>
+                </Buch>
+                <Buch>
+                    <Titel>Wandzungen </Titel>
+                    <Autor>Erik Wechsler</Autor>
+                    <Seiten>2</Seiten>
+                </Buch>
+                <Buch>
+                    <Titel>Ein Hagel der Krüge </Titel>
+                    <Autor>Juliane Waechter</Autor>
+                    <Seiten>369</Seiten>
+                </Buch>
+            </Regal>
+        </Ausgabestelle>
+    </Standort>
+</Bibliothek>
