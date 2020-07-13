@@ -10,12 +10,12 @@ public class XsltFileTransformer {
 
     public static void main(String[] args) {
 
-
-        transformXmlToXml(Constants.MY_BOOK1_XML_PATH, Constants.MY_BOOK2_XML_PATH, Constants.TRANSFORM_BOOK_XSL_PATH);
+        transformXml(Constants.LECTURE_DESCTIPTION_XML_PATH, Constants.LECTURE_DESCRIPTION_HTML_PATH, Constants.TRANSFORM_LECTURE_DESCRIPTION_XSL_PATH);
+        //transformXml(Constants.MY_BOOK1_XML_PATH, Constants.MY_BOOK2_XML_PATH, Constants.TRANSFORM_BOOK_XSL_PATH);
     }
 
 
-    public static void transformXmlToXml(String pathToXmlFile, String pathToCreatedXmlFile, String transformationFile) {
+    public static void transformXml(String pathToXmlFile, String pathToCreatedXmlFile, String transformationFile) {
         Source source = new StreamSource(pathToXmlFile);
         Result result = new StreamResult(pathToCreatedXmlFile);
         try {

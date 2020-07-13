@@ -18,11 +18,11 @@ use validateLectureDescriptionSpeech.dtd for validating XML -->
         <Termin>10.12.2020</Termin>
     </Kapitel>
     <Quelle quellenID="Q1">
-        <Autor>Student xy</Autor>
-        <Titel>Wikipedia</Titel>
+        <Autor>Michael Hielscher</Autor>
+        <Titel>Formale Sprachen, abstrakte Automaten</Titel>
     </Quelle>
-    <Quelle quellenID="hallo">
-        <Autor>Scholz</Autor>
-        <Titel>Deterministische Automaten</Titel>
+    <Quelle quellenID="Q2">
+        <Autor>Anja Metzner</Autor>
+        <Titel>Software-Engineering - kompakt</Titel>
     </Quelle>
 </Vorlesung>
