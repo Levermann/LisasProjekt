@@ -1,0 +1,29 @@
+h1 { color: #FC7878;
+    font-family: Times New Roman, sans-serif;
+    font-size: 2em;
+    text-align: left;
+}
+table {
+    background-color: transparent;
+    box-shadow: 0 0 .1em #666;
+}
+tbody tr:hover, tfoot tr:hover {
+    background-color:#fffbf0;
+}
+
+tbody td:hover, tfoot td:hover {
+    background-color: #ededed;
+}
+table td{
+    background-color: #ededed;
+}
+button {
+    background-color: #d8282c;
+    border: none;
+    color: white;
+    padding: 5px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+}

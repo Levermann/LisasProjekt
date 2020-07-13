@@ -1,0 +1,104 @@
+<!DOCTYPE html><html lang="de">
+<head>
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link media="all" href="webApp.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript"></script>
+    <meta charset="UTF-8">
+    <title>Lisa's Application HTML</title>
+</head>
+<body>
+<h1> WIF Semester 6 </h1>
+<figure>
+    <figcaption>Prüfungsvorbereitung</figcaption>
+</figure>
+<h2> Fügen Sie Relevante Themenschwerpunkte hinzu: </h2>
+<table border="1" id="myTable">
+    <caption>Prüfungen im 6. Semester</caption>
+    <thead>
+    <tr>
+        <th>Fach</th>
+        <th>Thema 1</th>
+        <th>Thema 2</th>
+        <th>Thema 3</th>
+        <th>Thema 4</th>
+    </tr>
+    </thead>
+    <tr id="swe">
+        <td>SWE 3</td>
+        <td>Automaten</td>
+        <td>State Charts</td>
+    </tr>
+    <tr>
+        <td>ITT</td>
+        <td>Web Anwendung</td>
+    </tr>
+    <tr>
+        <td>ITMC</td>
+        <td>ITSM - Change Management</td>
+    </tr>
+    <tfoot>
+    <tr>
+        <td>SAP</td>
+        <td>Material Management</td>
+    </tr>
+    </tfoot>
+</table>
+<br/>
+<script type="text/javascript">
+    function deleteInput(Thema, Fach, index){
+        var row = document.getElementsByTagName('tr')[index];
+        var list = row.getElementsByTagName('td');
+
+        var elementToDelete = document.getElementById(Fach+Thema);
+        if(Fach===list[0].innerHTML){
+            row.removeChild(elementToDelete);
+        }
+
+    }
+</script>
+<script type="text/javascript">
+    function deleteInputbyIndex(Thema){
+
+        var lines = document.getElementsByTagName('tr');
+        var cells = document.getElementsByTagName('td');
+        var index = cells.indexOf(Thema);
+        lines.removeChild(cells[index]);
+    }
+</script>
+<script type="text/javascript">
+    function deleteTheme(Thema, Fach){
+        for (i = 1; i < 5; i++){
+            deleteInput(Thema, Fach, i);
+        }
+
+    }
+</script>
+<script type="text/javascript">
+    function addInput(Thema, Fach){
+        for (i = 1; i < 5; i++){
+            addCellNew(Thema, Fach, i);
+        }
+
+    }
+</script>
+<script type="text/javascript">
+    function addCellNew(Thema, Fach, index){
+        var row = document.getElementsByTagName('tr')[index];
+        var list = row.getElementsByTagName('td');
+        if(Fach===list[0].innerHTML){
+            var x = row.insertCell(-1);
+            x.innerHTML = Thema;
+            x.id = Fach + Thema;
+
+        }
+    }
+</script>
+<form>
+    Fach: <input type="text" name="Fach" value="" />
+    Thema: <input type="text" name="Thema" value="" />
+    <button type="button" onclick="addInput(Thema.value, Fach.value)">add theme</button>
+    <button type="button" onclick="deleteTheme(Thema.value, Fach.value)">delete theme</button>
+
+</form>
+</body>
+</html>
