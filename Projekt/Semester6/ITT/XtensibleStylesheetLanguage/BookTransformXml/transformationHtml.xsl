@@ -2,8 +2,19 @@
 
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-    <xsl:template name="autor" match="Autor">
+    <xsl:template name="autor" match="/Book/Autor">
+        <autor>
+            <xsl:value-of select="/Book/Autor"/>
+        </autor>
     </xsl:template>
+
+
+    <xsl:template name="chapter" match="/Book/chapter">
+        <chapter>
+            <xsl:value-of select="/Book/Autor"/>
+        </chapter>
+    </xsl:template>
+
 
     <xsl:template name="title" match="/Book/title">
         <title>
